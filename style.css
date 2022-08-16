@@ -18,7 +18,7 @@ body {
   display: flex;
 }
 .header img {
-  width: 390px;
+  width: 385px;
   margin: 0 30px;
   height: auto;
   border: 0 solid black;
@@ -69,13 +69,16 @@ h4 {
 a:hover {
   text-decoration: underline;
 }
-h3 {
+.info h3 {
   font-size: 30px;
   padding: 55px 0 20px 0;
 }
 p {
   font-size: 25px;
   text-indent: 50px;
+}
+.info{
+  padding-left: 40px;
 }
 .projects{
   display: flex;
@@ -89,7 +92,7 @@ p {
   background-color: var(--card-bg);
   border: 0 solid pink;
   border-radius: 50px;
-  flex-basis: 25%;
+  flex-basis: 24%;
   font-size: 22px;
   
 }
@@ -101,15 +104,30 @@ p {
   flex-direction: column;
 
 }
-.fa-github{
+.projects .fa-github{
   color: black;
-  padding: 20px 0 40px 0;
+  padding: 20px 0 28px 0;
   font-size: 60px;
 }
-.fa-github:hover{
+.projects .fa-github:hover{
   color: var(--font-color);
 }
 
 .projects li, .fa-github{
   transition: color, background-color 0.4s ease-in;
+}
+.contact h3{
+  font-size: 30px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+}
+.contact ul li{
+  padding: 20px;
+  font-size: 25px;
+}
+.contact ul li a:hover{
+  color: var(--card-hover);
+}
+.contact ul li a svg{
+  padding-right: 10px;
 }
