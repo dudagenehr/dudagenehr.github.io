@@ -1,0 +1,115 @@
+:root {
+  --bg-color: rgb(255, 172, 172);
+  --font-color: rgb(20, 0, 65);
+  --card-bg: rgba(253, 134, 146, 0.7);
+  --card-hover: rgba(255, 37, 63, 0.6);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+body {
+  font-family: 'Nanum Gothic Coding', monospace;
+}
+.wrapper {
+  display: flex;
+}
+.header img {
+  width: 390px;
+  margin: 0 30px;
+  height: auto;
+  border: 0 solid black;
+  border-radius: 20px;
+  box-shadow: 0px 4px 14px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header,
+.main {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.header {
+  width: 600px;
+  text-align: center;
+  background: rgb(255, 172, 172);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 172, 172, 1) 0%,
+    rgba(255, 251, 189, 1) 100%
+  );
+  justify-content: space-around;
+}
+.main {
+  background: rgb(255, 172, 172);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 172, 172, 1) 0%,
+    rgba(255, 251, 189, 1) 100%
+  );
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  font-size: 25px;
+}
+nav ul li a,
+h1,
+h3,
+h4 {
+  color: var(--font-color);
+}
+a:hover {
+  text-decoration: underline;
+}
+h3 {
+  font-size: 30px;
+  padding: 55px 0 20px 0;
+}
+p {
+  font-size: 25px;
+  text-indent: 50px;
+}
+.projects{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+} 
+.projects li {
+  text-align: center;
+  padding: 20px 0;
+  margin: 8px;
+  background-color: var(--card-bg);
+  border: 0 solid pink;
+  border-radius: 50px;
+  flex-basis: 25%;
+  font-size: 22px;
+  
+}
+.projects li:hover{
+  background-color: var(--card-hover);
+}
+.projects li a {
+  display: flex;
+  flex-direction: column;
+
+}
+.fa-github{
+  color: black;
+  padding: 20px 0 40px 0;
+  font-size: 60px;
+}
+.fa-github:hover{
+  color: var(--font-color);
+}
+
+.projects li, .fa-github{
+  transition: color, background-color 0.4s ease-in;
+}
