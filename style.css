@@ -14,9 +14,9 @@
 body {
   font-family: 'Nanum Gothic Coding', monospace;
 }
-.wrapper {
+/* .wrapper {
   display: flex;
-}
+} */
 .header img {
   width: 385px;
   margin: 0 30px;
@@ -25,7 +25,7 @@ body {
   border-radius: 20px;
   box-shadow: 0px 4px 14px 4px rgba(0, 0, 0, 0.25);
 }
-
+/* 
 .header,
 .main {
   padding: 25px;
@@ -66,7 +66,7 @@ h3,
 h4 {
   color: var(--font-color);
 }
-a:hover {
+a:hover {,,
   text-decoration: underline;
 }
 .info h3 {
@@ -77,14 +77,14 @@ p {
   font-size: 25px;
   text-indent: 50px;
 }
-.info{
+.info {
   padding-left: 40px;
 }
-.projects{
+.projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-} 
+}
 .projects li {
   text-align: center;
   padding: 20px 0;
@@ -94,40 +94,95 @@ p {
   border-radius: 50px;
   flex-basis: 24%;
   font-size: 22px;
-  
 }
-.projects li:hover{
+.projects li:hover {
   background-color: var(--card-hover);
 }
 .projects li a {
   display: flex;
   flex-direction: column;
-
 }
-.projects .fa-github{
+.projects .fa-github {
   color: black;
   padding: 20px 0 28px 0;
   font-size: 60px;
 }
-.projects .fa-github:hover{
+.projects .fa-github:hover {
   color: var(--font-color);
 }
 
-.projects li, .fa-github{
+.projects li,
+.fa-github {
   transition: color, background-color 0.4s ease-in;
 }
-.contact h3{
+.contact h3 {
   font-size: 30px;
   padding-bottom: 10px;
   padding-left: 15px;
 }
-.contact ul li{
+.contact ul li {
   padding: 20px;
   font-size: 25px;
 }
-.contact ul li a:hover{
+.contact ul li a:hover {
   color: var(--card-hover);
 }
-.contact ul li a svg{
+.contact ul li a svg {
   padding-right: 10px;
+} */
+
+/*Responsive */
+
+@media screen and (max-width: 700px) {
+  .header,
+  .main {
+    background: none;
+  }
+  .wrapper {
+    background: rgb(255, 172, 172);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 172, 172, 1) 0%,
+      rgba(255, 251, 189, 1) 50%,
+      rgba(255, 172, 172, 1) 100%
+    );
+
+  }
+  .open{
+    background: url(./assets/menu-open.svg);
+  }
+  .close{
+    background: url(./assets/menu-close.svg);
+  }
+  .menu{
+    width: 50px;
+    height: 50px;
+   
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .closed{
+    visibility: hidden;
+  }
+  .top{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main{
+    position: relative;
+  }
+  nav{
+    position: absolute;
+    top: -550px;
+    background-color: var(--bg-color);
+    width: 100vw;
+    height: 100vh;
+    font-size: 30px;
+  }
+  nav ul li {
+    padding: 15px 30px;
+    border-bottom: 1px solid var(--font-color);
+  }
 }
