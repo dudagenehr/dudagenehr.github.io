@@ -63,7 +63,7 @@ nav ul {
   justify-content: space-between;
   font-size: 25px;
   position: absolute;
-  padding: 30px 0 30px 70px;
+  
 
 }
 nav ul li a,
@@ -90,6 +90,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding-top: 50px;
 }
 .projects li {
   text-align: center;
@@ -120,6 +121,9 @@ p {
 .projects li,
 .fa-github {
   transition: color, background-color 0.4s ease-in;
+}
+.contact{
+  padding-top: 50px;
 }
 .contact h3 {
   font-size: 30px;
